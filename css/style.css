@@ -1,0 +1,61 @@
+@font-face {
+   font-family: "For Personal Gain";
+   src: url(../fonts/ForPersonalGain-ForNon-Profit.otf);
+}
+
+body {
+	font-family: "For Personal Gain";
+	background: red;
+	color: #ffffff;
+	margin: 96px 160px;
+}
+
+h1 {
+	font-size: 72px;
+	color: #ffffff;
+}
+h2 {
+	font-size: 36px;
+	color: #ffffff;
+	text-align: center;
+}
+h3 {
+	font-size: 21px;
+	color: #ffffff;
+}
+p {
+	font-size: 16px;
+	color: #ffffff;
+	line-break: 2rem;
+}
+a {
+	color: #ffffff;
+}
+a:hover {
+	text-decoration: none;
+	color: #390099;
+}
+
+
+#navbar-brand {
+
+}
+
+#banner {
+	height: 70vh;
+	text-align: center;
+	background-image: url("images/colagem.png");
+	background-size: cover;
+	padding: 200px;
+	color: white;
+}
+
+
+#footer a {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+#footer a:hover {
+  color: white;
+}
