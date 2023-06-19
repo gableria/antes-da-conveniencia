@@ -1,17 +1,22 @@
 @font-face {
-   font-family: "For Personal Gain";
+   font-family: "For Personal Gain For Non-Profit";
    src: url(../fonts/ForPersonalGain-ForNon-Profit.otf);
 }
 
+@font-face {
+   font-family: "For Personal Gain For Profit";
+   src: url(../fonts/ForPersonalGain-ForProfit.otf);
+}
+
 body {
-	font-family: "For Personal Gain";
+	font-family: "For Personal Gain For Non-Profit";
 	background: red;
 	color: #ffffff;
-	margin: 96px 160px;
+	margin: 16px 16px;
 }
 
 h1 {
-	font-size: 72px;
+	font-size: 20px;
 	color: #ffffff;
 }
 h2 {
@@ -28,12 +33,20 @@ p {
 	color: #ffffff;
 	line-break: 2rem;
 }
+
 a {
 	color: #ffffff;
 }
+
 a:hover {
+	font-family: "For Personal Gain For Profit";
 	text-decoration: none;
-	color: #390099;
+	color: yellow;
+}
+
+
+p.legenda {
+	margin: 0.8rem 0 2.8rem 0;
 }
 
 
@@ -41,15 +54,35 @@ a:hover {
 
 }
 
+span.carousel-control-prev-icon {
+    background-image: url("../images/prev-icon.svg");
+}
+
+span.carousel-control-next-icon {
+    background-image: url("../images/next-icon.svg");
+}
+
+.carousel-control-prev, .carousel-control-next {
+	opacity: 1.0;
+}
+
+.carousel-control-prev, .carousel-control-next:hover {
+	opacity: 0.6;
+}
+
 #banner {
 	height: 70vh;
 	text-align: center;
-	background-image: url("images/colagem.png");
+	background-image: url("../images/colagem.png");
 	background-size: cover;
 	padding: 200px;
 	color: white;
 }
 
+.refs { 
+	font-family: "For Personal Gain For Profit"; 
+	font-size: 12px;
+}
 
 #footer a {
   color: #ffffff;
@@ -59,3 +92,26 @@ a:hover {
 #footer a:hover {
   color: white;
 }
+
+/* media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	h1 {font-size: 72px;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	body {margin: 32px 160px;} 
+	h1 {font-size: 64px;}
+	.refs {font-size: 14px;}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
